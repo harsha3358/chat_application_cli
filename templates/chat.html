@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div id="container">
+    <div id="sidebar">
+        <input id="partner" placeholder="Chat with">
+        <button onclick="openChat()">Open Chat</button>
+    </div>
+
+    <div id="chat">
+        <div id="messages"></div>
+        <input id="message" placeholder="Type message">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script>
+    const USERNAME = "{{ username }}";
+</script>
+<script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+<script src="/static/js/chat.js"></script>
+
+</body>
+</html>

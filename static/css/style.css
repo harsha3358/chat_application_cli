@@ -1,0 +1,22 @@
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+#sidebar {
+    width: 25%;
+    background: #eaeaea;
+    padding: 10px;
+}
+
+#chat {
+    width: 75%;
+    padding: 10px;
+}
+
+#messages {
+    height: 80%;
+    border: 1px solid black;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+}
